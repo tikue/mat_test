@@ -80,7 +80,9 @@ fn test_big_mat() {
 
     let mat = DMat::from_row_vec(27, 27, &v);
     debug_mat(&mat);
-    for (f1, f2) in mat.as_vec().iter().zip(v.iter()) {
-        assert_approx_eq!(f1, f2);
+    for r in 0..27 {
+        for c in 0..27 {
+            assert_approx_eq!(&v[27 * r + c], &mat[(r, c)]);
+        }
     }
 }
