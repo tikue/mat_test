@@ -1,0 +1,10 @@
+[package]
+name = "mat_test"
+version = "0.1.0"
+authors = ["Tim Kuehn <tim@solvvy.com>"]
+
+[dependencies]
+nalgebra = "0.2.21"
+log = "0.3.1"
+env_logger = "0.3.1"
+itertools = "0.3.24"
